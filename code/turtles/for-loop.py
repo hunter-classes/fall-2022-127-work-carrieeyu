@@ -1,15 +1,15 @@
 for i in range(4):
   print(i)
   
-print("----------")
+print("-----------------------------------------")
 
 for number in range(5,10): #only prints 5,6,7,8,9
     print(number)
 
-print("----------")
+print("-----------------------------------------")
 
 for name in ['able', 'baker', 'charlie']:
   print(name)
 print(name.upper()) #makes the name uppercase
 
-print("The loop is done")
+print("The loop is now done")
