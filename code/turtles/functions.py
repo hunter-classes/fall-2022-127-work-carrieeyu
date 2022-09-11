@@ -21,7 +21,7 @@ def square(t,x,y,w,color,sidelen):
     # draw a square
     for i in range(4):
         t.forward(sidelen)
-        t.right(90)
+        t.right(90)#360/4(bc 4 sides in a square)
 
 def triangle(t,x,y,w,color,sidelen):
     """
@@ -41,10 +41,10 @@ def triangle(t,x,y,w,color,sidelen):
     t.width(w)
     t.color(color)
     t.pendown()
-    # draw a square
+    # draw a triangle
     for i in range(3):
         t.forward(sidelen)
-        t.right(120)
+        t.right(120)#360/3(bc 3 sides in a triangle)
 
 
 #def hexagon(fill in these):
