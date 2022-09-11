@@ -67,4 +67,5 @@ square(crush,150,30,2,"blue",60)
 
 triangle(crush,-100,-50,2,"green",50)
 
+wn.exitonclick()
 wn.mainloop()
