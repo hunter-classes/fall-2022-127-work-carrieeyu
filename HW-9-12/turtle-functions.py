@@ -48,11 +48,13 @@ def ngon(t,numsides,x,y,color,width,sidelen):
 
 wn = turtle.Screen()
 
-octy = turtle.Turtle()
-hexagon(octy,-20,30,2,"blue",50)
+crush = turtle.Turtle()
+hexagon(crush,-20,30,2,"blue",50)
+ngon(crush,numsides,-100,40,"red",5,50)
 
-unknown = turtle.Turtle()
-ngon(unknown,numsides,70,100,"green",2,50)
+squirt = turtle.Turtle()
+hexagon(squirt,90,100,2,"yellow",30)
+ngon(squirt,numsides,50,100,"green",2,50)
 
 wn.exitonclick()
 wn.mainloop()
