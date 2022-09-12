@@ -30,17 +30,29 @@ def hexagon(t,x,y,w,color,sidelen):
         t.right(45) #360/8(bc 8 sides in an octagon)
 
 
-#def hexagon(fill in these):
-#    #code to draw the hexagon
-    
-#def ngon(t,numsides,x,y,color,width,sidelen):
-#    #code to draw the ngon
+numsides = int(input("Please enter a number of sides for the ngon:"))
+
+def ngon(t,numsides,x,y,color,width,sidelen):
+  t.penup()
+  t.goto(x,y)
+  t.color(color)
+  t.width(width)
+  t.pendown()
+
+  theSides = int(360/numsides)
+
+  for i in range(numsides):
+    t.forward(sidelen)
+    t.right(theSides)
+
 
 wn = turtle.Screen()
 
 octy = turtle.Turtle()
+hexagon(octy,-20,30,2,"blue",50)
 
-hexagon(octy,-50,30,2,"blue",50)
+unknown = turtle.Turtle()
+ngon(unknown,numsides,70,100,"green",2,50)
 
 wn.exitonclick()
 wn.mainloop()
