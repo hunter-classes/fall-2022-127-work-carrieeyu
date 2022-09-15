@@ -1,5 +1,4 @@
 import turtle
-#add the pos turtle to every shape 
 
 def position_turtle(t,x,y,w,color,sidelen):
     t.penup()
