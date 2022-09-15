@@ -1,4 +1,4 @@
-# use for python methods: https://www.w3schools.com/python/ref_string_find.asp
+# use for different python methods: https://www.w3schools.com/python/ref_string_find.asp
 #use to run code and has the breakdown of each line: https://pythontutor.com/
 #python problem practice: https://codingbat.com/python
 
