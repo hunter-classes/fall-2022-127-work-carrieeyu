@@ -2,14 +2,8 @@
 #hexagon() -- this should have the same parameters as square and triangle but should draw a hexagon.
 #ngon(t,numsides,x,y,color,width,sidelen) - this will draw a regular ngon with numsides sides.
 
-#Make sure to put tests in your program so when it runs it draws everything.
-
 import turtle
 
-
-
-
-  
 def hexagon(t,x,y,w,color,sidelen):
     """
     Draw a hexagon using the turtle passed into t
