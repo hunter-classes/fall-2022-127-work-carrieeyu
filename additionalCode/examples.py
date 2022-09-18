@@ -93,9 +93,5 @@ result1 = bondify("james bond")
 print("james bond -->", result1)
 
 
-
-
-
-
 #using return in replit might not show an output while print will but don't use it
 #only use print when you want something to appear to the screenof someone using your program, such as questions for input
