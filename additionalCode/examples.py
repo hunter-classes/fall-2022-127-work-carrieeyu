@@ -68,6 +68,9 @@ last = name[location+1:].capitalize()
 result = result + ' ' + last
 return result
 
+
+
+
 def bondify(name):
   """
   Input string in the form “first last”
