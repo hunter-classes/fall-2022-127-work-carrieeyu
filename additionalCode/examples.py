@@ -51,23 +51,23 @@ print("Direct Call short version:", is_even_short_version(16))
 print(isRightAngle(5,3,4))
 print(isRightAngle)
 
-def intialize(name):
- """
- Input a string in the form “first last”
- Return a string in the form “F. Last”
- """
-result = ""
+def initialize(name):
+  """
+  Input a string in the form “first last”
+  Return a string in the form “F. Last”
+  """
+  result = ""
   #isolate uppercase and add first init to result
-first = name[0]
-first = first.upper()
-result = result + first + "."
+  first = name[0]
+  first = first.upper()
+  result = result + first + "."
 
   #find the last name
-location = name.find(' ')
-last = name[location+1:].capitalize()
-result = result + ' ' + last
-return result
-
+  location = name.find(' ')
+  last = name[location+1:].capitalize()
+  result = result + ' ' + last
+  
+  return result
 
 
 
@@ -76,9 +76,7 @@ def bondify(name):
   Input string in the form “first last”
 	Return “Last, first last”
   """
-  name = input("Enter your name")
 
-  return 
 
 result = initialize("james bond")
 print("james bond -->", result)
