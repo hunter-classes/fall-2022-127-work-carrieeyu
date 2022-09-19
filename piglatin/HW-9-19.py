@@ -48,8 +48,8 @@ def piglatin(word):
     result2 = noFirstLetter + firstLetter + "ay"; #first letter that is a consonant
     return result2 #need this or it will print "none"
 
-result2 = piglatin("Carrie")
-print("Carrie -->",result2)
+result2 = piglatin("Aurys")
+print("Aurys -->",result2)
 
 result2 = piglatin("octopus")
 print("octopus -->",result2)
