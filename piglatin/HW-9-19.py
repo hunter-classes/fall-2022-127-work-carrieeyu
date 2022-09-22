@@ -64,3 +64,31 @@ result2 = piglatin("hello")
 print("hello -->", result2)
 
 
+#9/22/2022 notes from class
+#alternative solution
+#To DO:
+#1. Make it work for capitalized words
+#  ex. Cable --> Ablecay
+# Able --> Ableay. & cable. --> ablecay.
+def piglatinfy(word):
+  first = word[0]
+  
+  if first in 'aeiou':
+    result = word + 'ay'
+  else:
+    #move first letter to end and add 'ay'
+    result = word[1:]+first+'ay'
+    
+  return result
+
+test_word = "hello"
+result = piglatinfy(test_word)
+print(test_word,"-->",result)
+
+test_word = "Cable"
+result = piglatinfy(test_word)
+print(test_word,"-->",result)
+
+test_word = "Able."
+result = piglatinfy(test_word)
+print(test_word,"-->",result)
