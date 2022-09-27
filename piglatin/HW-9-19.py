@@ -64,7 +64,7 @@ result2 = piglatin("hello")
 print("hello -->", result2)
 
 
-#9/22/2022 notes from class
+#9/22/2022 homeowork; modify the capital letters 
 #alternative solution
 #To DO:
 #1. Make it work for capitalized words
