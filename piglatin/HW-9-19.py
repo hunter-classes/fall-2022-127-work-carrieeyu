@@ -71,45 +71,36 @@ print("hello -->", result2)
 #ex. Cable --> Ablecay
 #Able --> Ableay. & cable. --> ablecay.
 
-"""
-def piglatinfy(word):
-  first = word[0]
-  
-  if first in 'aeiou':
-    result = word + 'ay'
-  else:
-    #move first letter to end and add 'ay'
-    result = word[1:]+first+'ay'
-    
-  return result
-"""
 
 #if Cable --> Ablecay
 
 def piglatinfy(word):
   first = word[0]
-  if first in 'aeiou':
+  
+  if first in 'aeiou' and first[0].islower():
     result = word + 'ay'
-  else:
+  elif first in 'AEIOU' and first[0].isupper():
+    result = word[1:].capitalize() + first.lower() + 'ay'
+  elif first[0].isupper():
     #move first letter to end and add 'ay'
+    result = word[1:].capitalize() +first.lower()+'ay'
+  else:
     result = word[1:]+first.lower()+'ay'
     
-    return result
+  return result
 
-
-"""
 test_word = "hello"
 result = piglatinfy(test_word)
 print(test_word,"-->",result)
-"""
+
 
 test_word = "Cable"
 result = piglatinfy(test_word)
 print(test_word,"-->",result)
 
-"""
+
 test_word = "Able."
 result = piglatinfy(test_word)
 print(test_word,"-->",result)
-"""
+
 
