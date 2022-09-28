@@ -64,12 +64,12 @@ result2 = piglatin("hello")
 print("hello -->", result2)
 
 
-#9/22/2022 homeowork; modify the capital letters 
+#9/22/2022 homework; modify the capital letters 
 #alternative solution
 #To DO:
 #1. Make it work for capitalized words
-#  ex. Cable --> Ablecay
-# Able --> Ableay. & cable. --> ablecay.
+#ex. Cable --> Ablecay
+#Able --> Ableay. & cable. --> ablecay.
 def piglatinfy(word):
   first = word[0]
   
