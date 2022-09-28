@@ -7,5 +7,5 @@ for counter in range(1, 101):
     print(counter, "fizz")
   elif (counter % 5 == 0):
     print(counter, "buzz")
-  elif ((counter != counter % 3 == 0 and counter % 5 == 0) and counter % 3 == 0 and counter % 5 == 0):
+  elif (counter % 3 != 0 and counter % 5 != 0):
     print(counter)
