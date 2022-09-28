@@ -83,23 +83,9 @@ def piglatinfy(word):
     
   return result
 """
+
 #if Cable --> Ablecay
 
-"""
-if (word[0].isUpper):
-  word.lower()
-
-def piglatinfy(word):
-  first = word[0]
-  
-  if first in 'aeiou':
-    result = word + 'ay'
-  else:
-    #move first letter to end and add 'ay'
-    result = word[1:]+first+'ay'
-    
-  return result
-"""
 def piglatinfy(word):
   first = word[0]
   if first in 'aeiou':
@@ -110,15 +96,6 @@ def piglatinfy(word):
     
     return result
 
-"""
-  if first in 'aeiou' or 'AEIOU':
-    result = word + 'ay'
-  else:
-    #move first letter to end and add 'ay'
-    result = word[1:]+first+'ay'
-    
-  return result.lower()
-  """
 
 """
 test_word = "hello"
@@ -135,3 +112,4 @@ test_word = "Able."
 result = piglatinfy(test_word)
 print(test_word,"-->",result)
 """
+
