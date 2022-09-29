@@ -91,19 +91,6 @@ def piglatinfy(word):
 
 """
 def piglatinfy(word):
-  
-  for i in range(0, len(word)):
-  
-    if word[i] == '.':
-      result = True
-    else:
-      result = False
-
-    return result
-"""
-
-
-def piglatinfy(word):
   first = word[0]
   
   if first in 'aeiou' and first[0].islower(): 
@@ -123,23 +110,80 @@ def piglatinfy(word):
       result = result + len(result)-1 + '.';
 
   return result
+ """
+"""
+def piglatinify(word):
     
+    first = word[0]
+    if first in 'aeiouAEIOU':
+        result = word + 'ay'
+    else:
+        # move first letter to end and add 'ay'
+        # check to see if it's upper case
+        if first == first.upper():
+            result = word[1:].capitalize()+first.lower()+'ay'
+        else:
+            result = word[1:]+first+'ay'
+    
+    return result
+"""
 
-test_word = "igloo"
-result = piglatinfy(test_word)
-print(test_word,"-->",result)
+def piglatinify_v1(word):
+
+    first = word[0]
+    if first in 'aeiouAEIOU':
+        result = word + 'ay'
+    else:
+        if first == first.upper():
+            result = word[1:].capitalize()+first.lower()+'ay'
+        else:
+            result = word[1:]+first+'ay'
+    
+    return result
+
+  
+def piglatinify(word):
+    if word[-1] in ".!?":
+      end_of_sent = True
+      punctuation = word[-1]
+      word = word[:-1]
+    else:
+      end_of_sent = False
+      
+    # keep track of if the word had a capital letter
+    if word[0] == word[0].upper():
+        capital = True
+    else:
+        capital = False
+    
+    # transform to lower case
+    word = word[0].lower()+word[1:]
+    first = word[0]
+
+    # turn into piglatin
+    if first in 'aeiou':
+        result = word + 'ay'
+    else:
+        result = word[1:]+first+'ay'
+    
+    # if we started with a capital letter we
+    # have to transform the result back to have
+    # a capital letter
+    if capital:
+        result = result.capitalize()
+
+    #test to see if we have to add punctuation at the end
+    if end_of_sent:
+      result = result + punctuation
+    return result
 
 
-test_word = "Cable"
-result = piglatinfy(test_word)
-print(test_word,"-->",result)
+  
 
+"""
+import random
+import piglatin
 
-test_word = "Able."
-result = piglatinfy(test_word)
-print(test_word,"-->",result)
-
-test_word = "cable."
-result = piglatinfy(test_word)
-print(test_word,"-->",result)
-
+for i range(10):
+  print(random.randrange(5,50))
+"""
