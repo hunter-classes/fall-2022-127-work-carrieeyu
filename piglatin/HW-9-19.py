@@ -70,10 +70,9 @@ print("hello -->", result2)
 #1. Make it work for capitalized words
 #ex. Cable --> Ablecay
 #Able --> Ableay. & cable. --> ablecay.
+#Cable --> Ablecay
 
-
-#if Cable --> Ablecay
-
+"""
 def piglatinfy(word):
   first = word[0]
   
@@ -88,8 +87,36 @@ def piglatinfy(word):
     result = word[1:]+first.lower()+'ay'
     
   return result
+"""
 
-test_word = "hello"
+"""
+def piglatinfy(word):
+  
+  for i in range(0, len(word)):
+  
+    if word[i] == '.':
+      result = True
+    else:
+      result = False
+
+    return result
+"""
+def piglatinfy(word):
+  first = word[0]
+  
+  if first in 'aeiou' and first[0].islower():
+    result = word + 'ay'
+  elif first in 'AEIOU' and first[0].isupper():
+    result = word.capitalize() + 'ay'
+  elif first[0].isupper():
+    #move first letter to end and add 'ay'
+    result = word[1:].capitalize() +first.lower()+'ay'
+  else:
+    result = word[1:]+first.lower()+'ay'
+    
+  return result
+
+test_word = "igloo"
 result = piglatinfy(test_word)
 print(test_word,"-->",result)
 
@@ -103,4 +130,7 @@ test_word = "Able."
 result = piglatinfy(test_word)
 print(test_word,"-->",result)
 
+test_word = "cable."
+result = piglatinfy(test_word)
+print(test_word,"-->",result)
 
