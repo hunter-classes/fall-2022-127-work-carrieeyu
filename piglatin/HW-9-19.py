@@ -101,13 +101,15 @@ def piglatinfy(word):
 
     return result
 """
+
+
 def piglatinfy(word):
   first = word[0]
   
-  if first in 'aeiou' and first[0].islower():
-    result = word + 'ay'
+  if first in 'aeiou' and first[0].islower(): 
+    result = word + 'yay'
   elif first in 'AEIOU' and first[0].isupper():
-    result = word.capitalize() + 'ay'
+    result = word.capitalize() + 'yay'
   elif first[0].isupper():
     #move first letter to end and add 'ay'
     result = word[1:].capitalize() +first.lower()+'ay'
@@ -115,6 +117,13 @@ def piglatinfy(word):
     result = word[1:]+first.lower()+'ay'
     
   return result
+
+  for i in range(0, len(result)):
+    if result[i] in '.':
+      result = result + len(result)-1 + '.';
+
+  return result
+    
 
 test_word = "igloo"
 result = piglatinfy(test_word)
