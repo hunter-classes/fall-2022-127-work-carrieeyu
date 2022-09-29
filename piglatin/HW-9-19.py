@@ -119,7 +119,7 @@ def piglatinfy(word):
   return result
 
   for i in range(0, len(result)):
-    if result[i] in '.':
+    if result[i] == '.':
       result = result + len(result)-1 + '.';
 
   return result
