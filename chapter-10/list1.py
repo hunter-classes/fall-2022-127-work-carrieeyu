@@ -1,4 +1,5 @@
 """due 10/3 before class
+
 Number 3:
 Starting with the list of the previous exercise, write Python statements to do the following:
 
