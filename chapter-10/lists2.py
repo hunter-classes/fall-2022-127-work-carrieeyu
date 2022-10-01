@@ -1,4 +1,5 @@
 """due 10/3 before class
+
 Number 4:
 Write a function called average that takes a list of numbers as a parameter and returns the average of the numbers.
 
