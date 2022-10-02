@@ -2,7 +2,7 @@
 
 #Number 5: Write a Python function named max that takes a parameter containing a nonempty list of integers and returns the maximum value. (Note: there is a builtin function named max but pretend you cannot use it.)
 def maxNum(numsList):
-  max = 0
+  max = numsList[0]
   
   for num in numsList:
     if num > max:
