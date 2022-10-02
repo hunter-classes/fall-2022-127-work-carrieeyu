@@ -1,24 +1,4 @@
-"""due 10/3 before class
-
-Number 3:
-Starting with the list of the previous exercise, write Python statements to do the following:
-
-Previous list: Create a list called myList with the following six items: 76, 92.3, “hello”, True, 4, 76.
-
-Append “apple” and 76 to the list.
-
-Insert the value “cat” at position 3.
-
-Insert the value 99 at the start of the list.
-
-Find the index of “hello”.
-
-Count the number of 76s in the list.
-
-Remove the first occurrence of 76 from the list.
-
-Remove True from the list using pop and index.
-"""
+"""due 10/3 before class"""
 
 #Create a list called myList with the following six items: 76, 92.3, “hello”, True, 4, 76.
 prevList = [76, 92.3, "hello", True, 4, 76]
