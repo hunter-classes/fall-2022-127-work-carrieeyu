@@ -104,7 +104,18 @@ print("------------------------------------")
 #Number 6: Write a function that takes two lists of numbers and returns a new
 #list where each item is the corresponding values of the original lists added together. 
 #Ex [1,2,3] and [10,20,30] would return the list [11,22,33]
-print("(6)")
+print("(***6)")
+
+def addLists(list1,list2):
+  newList = []
+
+  for num in list1:
+    for num in list2:
+      newList = list1[num+1] + list2[num+1]
+  return newList
+
+result = addLists([7,2,0,3],[1,2,3,4])
+print("The combined list of added numbers are",result,".")
 
 """
 def addLists(list1,list2):
@@ -112,11 +123,11 @@ def addLists(list1,list2):
   
   for num in list1:
     for num in list2:
-      list1[num] + list2[num]
-    return
+      newList = list1[num] + list2[num]
+    return newList
 
-result = addLists([7,2,0,3])
-result = addLists([2,11,5,6])
+result = addLists([7,2,0,3],[1,2,3,4])
+#result = addLists([2,11,5,6])
 print("The combined list of added numbers are",result,".")
 """
 #Number 7: Ch 10:#10; Count how many words in a list have length 5.
@@ -141,11 +152,10 @@ print("The number of words with a length of 5 is",result,".")
 
 print("------------------------------------")
 #Number 8: Ch 10:#11; Sum all the elements in a list up to but not including the first even number.
-print("(8)")
+print("(***8)")
 
 def noFirstEven(numsList):
 
-  """
   sum = 0
 
   for num in numsList:
@@ -163,20 +173,26 @@ print("The sum without the first even number is",result,".")
 
 result = noFirstEven([2,3,43,1])#-->should return 47
 print("The sum without the first even number is",result,".")
-"""
+
 
 print("------------------------------------")
 #Number 9: Ch 10:#12; Count how many words occur in a list up to and including the first occurrence of the word “sam”.
-print("(9)")
+print("(***9)")
 
-"""
 def countToSam(listNums):
-  
+
+  count = 0;
+
   for string in listNums:
-    if string = "sam":
-      daIndex = listNums.index("sam")
-      findBeforeList = listNums[:aIndex]
-
-
+    if string == "sam":
+      count += 1
+  return count
+  
 result = countToSam(["no","yes","sam","dude","what"])#should return 3 bc there are two words before and including sam
-"""
+print("The number of times sam occurs in the list is",result,".")
+
+result = countToSam(["sam","sam","sam","school","sam"])
+print("The number of times sam occurs in the list is",result,".")
+
+result = countToSam(["sam","sam","what"])
+print("The number of times sam occurs in the list is",result,".")
