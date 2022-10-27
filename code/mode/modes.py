@@ -24,14 +24,15 @@ def freq(l,v):
 
 #shortcut:
 #return l.count("yah")
-
+  
   count = 0
 
   for string in l:
     if string == v:
       count += 1
   return count
-  
+
+
 result = freq(["weewoo","yah","weewoo","yeet","yah"],"weewoo")
 print("The frequency of the word","is",result,".")
 
@@ -40,3 +41,12 @@ print("The frequency of the word","is",result,".")
 
 result = freq(["no","keke","okay","carrie"],"amongus")
 print("The frequency of the word", "is",result,".")
+
+def mode(dataset):
+  """
+  returns a mode of the dataset that is the value that appears most freqently
+
+  if multiple values appear the same num of times and are most frequent, return any of time
+  """
+
+dataset = buildRandomList(20,30)
