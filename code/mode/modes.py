@@ -43,10 +43,32 @@ result = freq(["no","keke","okay","carrie"],"amongus")
 print("The frequency of the word", "is",result,".")
 
 def mode(dataset):
-  """
-  returns a mode of the dataset that is the value that appears most freqently
+    """
+    Returns a mode of the dataset, that is
+    the value that appears most frequently
+    if multiple values appear the same # of times and are
+    most frequent, return any of them.
+    Ex: mode([5,4,5,6,7,8,5,4]) --> 5 since 5 appears the most
+    mode([5,5,5,4,4,4,2,2,7,7,8,8,9]) --> return 5 or 4 since
+    both of those values appear 3 times which is the most
+    Strategy:
+    assume the first value is the mode
+    we can grab its frequency
+    for each remaining item in the dataset:
+      count that items frequence and see if it's the new
+      mode so far    
+    """
+    modeSoFar = dataset[0]
+    freqSoFar = freq(dataset,modeSoFar)
+    for item in dataset[1:]:
+        if freq(dataset,item) > freqSoFar:
+            modeSoFar = item
+            freqSoFar = freq(dataset,item)
+            
+    return modeSoFar
 
-  if multiple values appear the same num of times and are most frequent, return any of time
-  """
 
-dataset = buildRandomList(20,30)
+#dataset = buildRandomList(20,30)
+
+def testMode(size,maxValue):
+  dataset = 
