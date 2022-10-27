@@ -28,4 +28,4 @@ lines = f.readlines()
 lines.append("This line has no newline")
 stripped = []
 for line in lines:
-    stripped.append(line.strip())
+    stripped.append(line.strip() )

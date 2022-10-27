@@ -3,7 +3,7 @@ data = [1,2,3,4,5,6,7,8,9,10]
 def sqlist(l):
   result = []
   for item in l:
-    result,append(item*item)
+    result,append(item * item)
   return result
 
 r = sqlist(data)

@@ -22,7 +22,7 @@ for i in range(20):
     
 odds = []
 for item in random_list:
-    if item%2==1:
+    if item % 2==1:
         odds.append(item)
 
 squares = []
