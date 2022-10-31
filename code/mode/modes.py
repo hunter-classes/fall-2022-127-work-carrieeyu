@@ -1,46 +1,28 @@
-#Q1: findLargest(l) which takes in a list of numbers and returns the value of the smallest number
+import datetime
+import random
 
-def findLargest(l):
-  min = l[0]
-  
-  for num in l:
-    if num < min:
-      min = num
-  return min
+def findLargest(dataset):
+    largeSoFar = dataset[0]
+    for item in dataset[1:]:
+        if item > largeSoFar:
+            largeSoFar = item
+    return largeSoFar
 
-result = findLargest([2,5,3])
-print("The min number is",result,".")
+def freq(dataset,v):
+    #count = 0
+    #for item in dataset:
+    #    if item == v:
+    #        count = count + 1
+    #return count
+    return len([x for x in dataset if x == v])
 
-result = findLargest([678,100,4356,235])
-print("The min number is",result,".")
-
-result = findLargest([1,1,1])
-print("The min number is",result,".")
-
-print("---------------------------------------------")
-#Q2: freq(l,v) which takes a list of numbers (l) and a value (v). The function will return the freuqeency of v, that is, the number of times that v appears in l.
-
-def freq(l,v):
-
-#shortcut:
-#return l.count("yah")
-  
-  count = 0
-
-  for string in l:
-    if string == v:
-      count += 1
-  return count
-
-
-result = freq(["weewoo","yah","weewoo","yeet","yah"],"weewoo")
-print("The frequency of the word","is",result,".")
-
-result = freq(["no","yah","okay","yeethay"],"yah")
-print("The frequency of the word","is",result,".")
-
-result = freq(["no","keke","okay","carrie"],"amongus")
-print("The frequency of the word", "is",result,".")
+def buildRandomList(size,maxvalue):
+    #result = []
+    #for x in range(size):
+    #    result.append(random.randrange(maxvalue))
+    #return result
+    result = [random.randrange(maxvalue) for x in range(size)]
+    return result 
 
 def mode(dataset):
     """
@@ -59,8 +41,9 @@ def mode(dataset):
       mode so far    
     """
     modeSoFar = dataset[0]
-    freqSoFar = freq(dataset,modeSoFar)
-    for item in dataset[1:]:
+    freqSoFar = freq(dataset,modeSoFar) #n
+    for item in dataset[1:]: #outer loop->n
+      #calling freq each time is n
         if freq(dataset,item) > freqSoFar:
             modeSoFar = item
             freqSoFar = freq(dataset,item)
@@ -68,7 +51,54 @@ def mode(dataset):
     return modeSoFar
 
 
-#dataset = buildRandomList(20,30)
 
 def testMode(size,maxValue):
-  dataset = 
+  print("Dataset Size: ", size)
+  dataset = buildRandomList(size,maxValue)
+  m = mode(dataset)
+  print("Mode: ", m)
+
+def testFindLargest(size,maxValue):
+  
+  print("Dataset Size: ", size)
+  dataset = buildRandomList(size,maxValue)
+  m = testFindLargest(dataset)
+  print("Largest: ", m)
+
+  """
+    dataset = buildRandomList(size,maxValue)
+    # print(dataset)
+    t = datetime.datetime.now()
+    starttime = t.microsecond / 1000
+    m = mode(dataset)
+    end = datetime.datetime.now()
+    elapsed = (end.microsecond / 1000)-starttime
+    print("size: ",size," time: ",elapsed)
+  """
+#testFindLargest(80000,30)
+testMode(80000, 30)
+
+#pretend like the program starts here
+dataset = [ some dataset]
+
+for item in dataset:
+  x = x do something with dataset
+  z = x + y
+  if z > something:
+    something
+  else:
+    something else
+  
+x=5
+y=10
+if x > y:
+  z = z +y
+else:
+  z = x+y
+  z=z*z
+z=x+y
+z=z*z
+print(z)
+
+#nested for loops are faster than n*n=n^2(squared method)
+#freq is a sqaured method
