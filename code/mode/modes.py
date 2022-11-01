@@ -50,6 +50,14 @@ def mode(dataset):
             
     return modeSoFar
 
+def fastMode(dataset):
+  #assume all values in dataset
+  #are between 0 and 99 inclusive
+
+  #1) make a list of 100 slots and set them all to 0
+  #this will store our tallies
+
+  #
 
 
 def testMode(size,maxValue):
