@@ -1,3 +1,8 @@
+"""
+MADLIBS EXTRAS:
+1) Pay attention to letter case. That is, if you replace a word at the beginning of a sentence, it should be capitalized, otherwise, lowercase. This is except in the case of proper nouns which should always be capitalized.
+"""
+
 import random
 
 verb = "<VERB>"
