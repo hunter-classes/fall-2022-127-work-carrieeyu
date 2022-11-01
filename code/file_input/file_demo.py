@@ -7,6 +7,15 @@
 # we read in the next line 
 # line = f.readline()
 # print(line)
+# read in the entire file
+# as a big string of characters
+# f = open("data.dat")
+# data = f.read() 
+
+# each time we do f.readline()
+# we read in the next line 
+# line = f.readline()
+# print(line)
 # f.seek(0)
 # line = f.readline()
 # print(line)
@@ -28,4 +37,5 @@ lines = f.readlines()
 lines.append("This line has no newline")
 stripped = []
 for line in lines:
-    stripped.append(line.strip() )
+    stripped.append(line.strip())
+
