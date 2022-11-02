@@ -1,14 +1,12 @@
 #text file test
 
-
-
 import random
 
 verbs = ['talk','walk','nap','yell','scream']
 nouns = ['boy','girl','man','woman','cat']
 emotions = ['angry','sad','annoyed']
 
-f = open("madlibs.txt")
+f = open("story.txt")
 
 def substitute(madlibs):
   for word in f:
@@ -17,5 +15,6 @@ def substitute(madlibs):
     word = word.replace("<EMOTION>", random.choice(emotions))
   return word
 
-word = substitute("madlibs.txt")
+word = substitute("story.txt")
 print(word) #add another extra and put \n later on to separate each sentence
+
