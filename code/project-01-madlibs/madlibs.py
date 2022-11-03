@@ -7,9 +7,10 @@ MADLIBS EXTRAS:
 
 import random
 
-verbs = ['talk','walk','nap','yell','scream']
-nouns = ['boy','girl','man','woman','cat']
-emotions = ['angry','sad','annoyed']
+verbs = ['talk','walk','run','yell','scream']
+nouns = ['school','home','hell']
+emotions = ['angry','sad','annoyed','happy','insane']
+names = ['Carrie','Julie','Zilena','Carmen','John']
 
 f = open("story.txt")
 
@@ -18,6 +19,7 @@ def substitute(madlibs):
     word = word.replace("<VERB>", random.choice(verbs))
     word = word.replace("<NOUN>", random.choice(nouns))
     word = word.replace("<EMOTION>", random.choice(emotions))
+    word = word.replace("<NAME>", random.choice(names))
   return word
 
 word = substitute("story.txt")

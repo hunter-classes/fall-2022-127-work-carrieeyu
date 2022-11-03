@@ -1,2 +1,1 @@
-Carrie took a <VERB> because of the <NOUN>. 
-She was feeling <EMOTION> and did not talk to <NOUN>.
+<NOUN> is far away, so <NAME> decided to <VERB>. <NAME> felt very <EMOTION>.
