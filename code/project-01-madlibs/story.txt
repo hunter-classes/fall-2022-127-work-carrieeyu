@@ -1,2 +1,2 @@
-<NOUN> seems to be at a distant location, away from <NAME>.
-This made <NOUN> decide to <VERB> because they felt <EMOTION>.
+<NOUN> seems to be at a distant location, a hundred miles away from <NAME>.
+This made <NAME> decide to <VERB> because they felt <EMOTION>.
