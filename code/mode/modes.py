@@ -91,24 +91,34 @@ def buildRandomList(size,maxvalue):
     return result 
 
 def fastMode(dataset):
-    # assume all values in dataset
-    # are between 0 and 99 inclusive
+    # find the largest value in the dataset
+    largest = findLargest(dataset)
 
-    # 1. make a list of 100 slots and set them all to 0 this will store our tallies
-    talliesList = [0]*100
+    # make the buckets for the tallies
+    tallies = [0 for x in range(largest+1)]
 
-    # 2. Loop through our dataset and for each item incremement (add 1) to the appropriate slot in the tallies list
-    for i in dataset(tally):
-      talliesList += 1
+    # 2. Loop through our dataset and increment the buckets
+    for item in dataset:
+        tallies[item] = tallies[item] + 1
 
-    # 3. the index with the highest value in tallies is the mode
-    max = tally[0]
-  
-    if i > max:
-      max = i
-    return max
-  
-    print(talliesList)
+    # find the bucket with the largest Value
+    # - that's the one that occured the most
+    mode_count = findLargest(tallies)
+
+    # find and return the index that holds mode_count
+    # in tallies
+    for i in range(len(tallies)):
+        if tallies[i] == mode_count:
+            return i
+
+    # we should never actually get here     
+    return i
+
+def testFastMode(size, maxValue):
+  dataset = buildRandomList(size, maxValue)
+  result = fastMode(dataset)
+  print(dataset)
+  print(result)
 
 def testMode(size,maxValue):
     print("Dataset Size: ",size)
