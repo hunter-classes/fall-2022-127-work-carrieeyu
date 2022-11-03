@@ -1,49 +1,32 @@
 """
 MADLIBS EXTRAS:
-1)Write a story in a file and read it from your program; include the file in your repo 
+1)Write a story in a file and read it from your program; include the file in your repo(done)
 
 2)Pay attention to letter case. If you replace a word at the beginning of a sentence, it should be capitalized. Otherwise, lowercase. This is except in the case of proper nouns which should always be capitalized.
 """
 
 import random
 
-verbs = ['talk','walk','run','yell','scream']
-nouns = ['school','home','hell']
-emotions = ['angry','sad','annoyed','happy','insane']
-names = ['Carrie','Julie','Zilena','Carmen','John']
+#list of story potential story replacements
+verbs = ['talk','walk','run','yell','scream','kick','dance','sit','nap','learn','shout']
+nouns = ['school','home','hell','bus','mother','father','river','Bahamas','Hogwarts','snake']
+emotions = ['angry','sad','annoyed','happy','insane','disappointed','confident','desperate']
+names = ['Carrie','Julie','Zilena','Carmen','John','Shirley','Ruby','Sherry','Keith']
 
-f = open("story.txt")
+#extra 1
+f = open("story.txt", "r") #accessing the text file
+theStory = f.read() #reading from the text file
+words = theStory.split()
 
 def substitute(madlibs):
-  for word in f:
-    word = word.replace("<VERB>", random.choice(verbs))
-    word = word.replace("<NOUN>", random.choice(nouns))
-    word = word.replace("<EMOTION>", random.choice(emotions))
-    word = word.replace("<NAME>", random.choice(names))
+  word = theStory
+  word = word.replace("<VERB>", random.choice(verbs))
+  word = word.replace("<NOUN>", random.choice(nouns))
+  word = word.replace("<EMOTION>", random.choice(emotions))
+  word = word.replace("<NAME>", random.choice(names))
   return word
-
-word = substitute("story.txt")
-print(word)
-
-f.close()
-
-
-#-------------------------------------------------------NOTES:
-"""
-import random
-
-verb = "<VERB>"
-noun = "<NOUN>"
-sentence = "Carrie <VERB> to the <NOUN> because her friend <VERB> to the <NOUN>"
-
-def substitute(verbs,nouns):
-  if verb in sentence:
-    result = sentence.replace(verb, random.choice(verbs))
-  if noun in sentence:
-    result2 = result.replace(noun, random.choice(nouns))
-  return result2
-    
-result2 = substitute(['talk','walk','nap','yell','scream'],['boy','girl','man','woman','cat']) #substitution without file_input
-print(result2)
-"""
+  
+  
+print(substitute(words)) #displaying the story text with substitutions 
+f.close() #closing the text file
 

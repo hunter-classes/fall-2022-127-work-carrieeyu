@@ -1,2 +1,2 @@
-<NOUN> is far away, so <NAME> decided to <VERB>.
-<NAME> felt very <EMOTION>.
+<NOUN> seems to be at a distant location, away from <NAME>.
+This made <NOUN> decide to <VERB> because they felt <EMOTION>.
