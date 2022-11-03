@@ -77,7 +77,7 @@ f.close()
 
 
 """
-PRINTS TWO LINES FROM STORY
+PRINTS TWO LINES FROM STORY without split method
 
 import random
 
@@ -102,7 +102,19 @@ names = ['Carrie','Julie','Zilena','Carmen','John']
 
 f = open("story.txt", "r")
 theStory = f.read()
+listStory = theStory.split("\n")
+
+def substitute(data):
+  for i in range(len(listStory)):
+    if listStory[i] == "<VERB>":
+      listStory[i] = listStory[i].replace("<VERB>", random.choice(verbs))
+    #return " ".join(listStory)
+    return listStory[i]
 
 
+print(" ".join(listStory))
+#print(theStory)
+i = substitute("story.txt")
+print(i)
 
 f.close()
