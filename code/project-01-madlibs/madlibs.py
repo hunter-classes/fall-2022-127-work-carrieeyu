@@ -1,7 +1,6 @@
 """
 MADLIBS EXTRAS:
 1)Write a story in a file and read it from your program; include the file in your repo(done)
-
 2)Pay attention to letter case. If you replace a word at the beginning of a sentence, it should be capitalized. Otherwise, lowercase. This is except in the case of proper nouns which should always be capitalized.
 """
 
