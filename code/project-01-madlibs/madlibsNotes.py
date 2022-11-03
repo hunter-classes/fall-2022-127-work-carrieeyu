@@ -1,10 +1,8 @@
-#text file test
-
-
 #print(word.capitalize()) #fix b/c capitalizes the first word and puts everything else in lower case
 
 
 #-------------------------------------------------------NOTES:
+
 """
 import random
 
@@ -22,3 +20,6 @@ def substitute(verbs,nouns):
 result2 = substitute(['talk','walk','nap','yell','scream'],['boy','girl','man','woman','cat']) #substitution without file_input
 print(result2)
 """
+
+#This was my original code, without converting the story to a file.
+#Keeping for reference, in case I need it for further replacements later on.
