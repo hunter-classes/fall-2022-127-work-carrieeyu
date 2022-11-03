@@ -1,1 +1,2 @@
-<NOUN> is far away, so <NAME> decided to <VERB>. <NAME> felt very <EMOTION>.
+<NOUN> is far away, so <NAME> decided to <VERB>.
+<NAME> felt very <EMOTION>.

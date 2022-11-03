@@ -48,7 +48,7 @@ for i in range(len(words)):
 f.close()
 """
 
-
+"""
 import random
 
 verbs = ['talk','walk','run','yell','scream']
@@ -69,6 +69,40 @@ def substitute(madlibs):
 word = substitute("story.txt")
 print(word)
 #print(word.capitalize()) #fix b/c capitalizes the first word and puts everything else in lower case
+
+
+f.close()
+"""
+
+
+
+"""
+PRINTS TWO LINES FROM STORY
+
+import random
+
+verbs = ['talk','walk','run','yell','scream']
+nouns = ['school','home','hell']
+emotions = ['angry','sad','annoyed','happy','insane']
+names = ['Carrie','Julie','Zilena','Carmen','John']
+
+f = open("story.txt", "r")
+theStory = f.read()
+print(theStory)
+
+f.close()
+"""
+
+import random
+
+verbs = ['talk','walk','run','yell','scream']
+nouns = ['school','home','hell']
+emotions = ['angry','sad','annoyed','happy','insane']
+names = ['Carrie','Julie','Zilena','Carmen','John']
+
+f = open("story.txt", "r")
+theStory = f.read()
+
 
 
 f.close()
