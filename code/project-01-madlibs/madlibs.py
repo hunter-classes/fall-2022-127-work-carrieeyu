@@ -17,7 +17,7 @@ f = open("story.txt", "r") #accessing the text file
 theStory = f.read() #reading from the text file
 words = theStory.split()
 
-#this function is used to replace the indicated <> with story elements from the lists that are shown above 
+#this function is used to replace the indicated <> with randomized story elements from the lists that are shown above 
 def substitute(madlibs):
   word = theStory
   word = word.replace("<VERB>", random.choice(verbs)) #replaces any indication of <VERB> with an actual verb from the specified list
