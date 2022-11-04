@@ -17,7 +17,7 @@ heroes = ['h_keith', 'h_shirley', 'h_jen', 'h_chris', 'h_ida', 'h_Xen']
 #EXTRA 1
 f = open("story.txt", "r") #accessing the text file
 theStory = f.read() #reading from the text file
-wordsList = theStory.split() #splitting the story into a list struction; to use and access specific words by the index
+wordsList = theStory.split() #splitting the story into a list structure; to use and access specific words by the index
 
 def substitutions():
 
@@ -38,9 +38,9 @@ def substitutions():
       #EXTRA 3
       wordsList[i] = hero.capitalize() #constant hero
     if wordsList[0] == "<VERB>" or "<NOUN>" or "<EMOTION>" or "<NAME>" or "<HERO>":
-      wordsList[0] = wordsList[0].capitalize() #capitalizes any category's elements as it is in the beginning of a sentence
+      wordsList[0] = wordsList[0].capitalize() #capitalizes any category's elements if it appears in the first index of the story
   
-  return " ".join(wordsList) #reverses back to the original story without access and usage of index
+  return " ".join(wordsList) #changes back to the structure of the original story; no longer a list of words
 
 print(substitutions()) #displaying the story's modified version with substitutions
 
