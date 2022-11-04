@@ -1,8 +1,8 @@
 """
-MADLIBS EXTRAS:
-1)Write a story in a file and read it from your program; include the file in your repo(done)
-2)<HERO> would randomly choose a hero once and then use that name for all instances of <HERO>(done)
-3)Placed capitalization where it should be; the beginning of a sentence and nouns(done)
+MADLIBS EXTRAS I HAVE COMPLETED:
+1)Write a story in a file and read it from your program; include the file in your repo
+2)<HERO> would randomly choose a hero once and then use that name for all instances of <HERO>
+3)Placed capitalization where it should be; the beginning of a sentence and nouns
 """
 
 import random
