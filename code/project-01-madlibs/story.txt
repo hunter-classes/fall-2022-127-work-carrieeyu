@@ -1,2 +1,5 @@
-<NOUN> seems to be at a distant location, a hundred miles away from <NAME>.
-This made <NAME> decide to <VERB> because they felt <EMOTION>.
+<HERO> has saved <NAME> on multiple occassions, in the case where serious situations have risen.
+After resolving the said conflict, they have expressed that they are <EMOTION> as soon as they reach <NOUN> in time.
+This caused <HERO> to believe that people are weird and awful.
+
+

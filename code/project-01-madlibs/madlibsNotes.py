@@ -1,5 +1,3 @@
-#print(word.capitalize()) #fix b/c capitalizes the first word and puts everything else in lower case
-
 
 #-------------------------------------------------------NOTES:
 
