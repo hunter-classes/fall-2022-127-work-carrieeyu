@@ -27,4 +27,4 @@ def count_words(s):
 
 letter_counts = count_letters(s)
 word_counts = count_words(s)
-  
+
