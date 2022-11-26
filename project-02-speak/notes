@@ -1,0 +1,12 @@
+
+"""
+f = open("input.txt", "r") #accessing the text file
+theStory = f.read() #reading from the text file
+
+g = open("pirate.dat", "r")
+translationList = g.read()
+
+def translateStory():
+
+print(translateStory())
+"""

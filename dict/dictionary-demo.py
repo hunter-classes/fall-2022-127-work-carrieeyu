@@ -23,11 +23,11 @@ for item in k:
 
 # convert the dict_keys thing into a list:
 klist = [x for x in person.keys()]
-print(klist)
+print("1)", klist)#prints first,last,age....etc(the dict)
 
 # pull out the values and convert to list
 vlist = [x for x in person.values()]
-
+print("2)", vlist)#prints john,smith,50,60...etc(the values of the dict)
 
 xl = [3,5]
 xt = (3,5)
