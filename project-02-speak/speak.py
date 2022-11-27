@@ -13,29 +13,27 @@ pirate = {'captain' : "cap'n",
           'never' : "ne'er",
           'truck' : "schooner",
           'money' : "treasure"}
-
 klistPirate = [x for x in pirate.keys()]#converts to a list of words before Pirate translation
 
-#creating the Brooklyn dictionary
+
 brooklyn = {'the' : "de",
             'you' : "yuh",
             "don't" : "doan",
             'to' : "tuh",
             "isn't" : "ain't"}
+klistBrooklyn = [x for x in brooklyn.keys()]
 
-klistBrooklyn = [x for x in brooklyn.keys()]#converts to a list of words before Brooklyn translation
 
-#creating the nonsenseAbbreviate dictionary
 nonsenseAbbreviate = {'surrounded' : "surr'nded",
                       'friends' : "fre'ns",
                       'looked' : "lo'ked",
                       'truck' : "tr'ck",
                       'money' : "m'ney"}
-
-klistNonsenseAbbreviate = [x for x in nonsenseAbbreviate.keys()]#converts to a list of words before nonsenseAbbreviate translation
+klistNonsenseAbbreviate = [x for x in nonsenseAbbreviate.keys()]
 
 import random
 
+#list for advanced translation phrases from the 3 languages
 pirateWords = ['shiver me timbers!', 'blimey!', 'sink me!']
 brooklynWords = ['it is real sad!', 'got me dumbfounded!']
 nonsenseWords = ["n'more!", 'cryin!', 'weepin!']
@@ -50,7 +48,7 @@ def translatePirate():
           wordsList[i] = random.choice(pirateWords)
     return (" ".join(wordsList).capitalize())#changes back to the structure of the original story; no longer a list of words
 
-#function translates into Brooklyn language; same process as Pirate function
+
 def translateBrooklyn():
     for i in range(len(wordsList)):
       for a in range(len(klistBrooklyn)):
@@ -60,7 +58,7 @@ def translateBrooklyn():
           wordsList[i] = random.choice(brooklynWords)
     return (" ".join(wordsList).capitalize())
 
-#function translates into nonsenseAbbreviate language; same process as Pirate function
+
 def translateNonsenseAbbreviate():
     for i in range(len(wordsList)):
       for a in range(len(klistNonsenseAbbreviate)):
@@ -74,12 +72,12 @@ def translateNonsenseAbbreviate():
 chooseLanguage = input("Would you like to translate the story into the Pirate, Brooklyn, or nonsenseAbbreviate language?")#user input to pick language
 
 if chooseLanguage == "Pirate" or chooseLanguage == "pirate" or chooseLanguage == "PIRATE":
-  print("\n", translatePirate())#utilizes Pirate language if user picks Pirate
+  print("\n", translatePirate())
 
 if chooseLanguage == "Brooklyn" or chooseLanguage == "brooklyn" or chooseLanguage == "BROOKLYN":
-  print("\n", translateBrooklyn())#utilizes Brooklyn language if user picks Brooklyn
+  print("\n", translateBrooklyn())
 
 if chooseLanguage == "nonsenseAbbreviate" or chooseLanguage == "nonsense abbreviate" or chooseLanguage == "nonsense Abbreviate" or chooseLanguage == "NonsenseAbbreviate" or chooseLanguage == "Nonsense abbreviate" or chooseLanguage == "Nonsenseabbreviate" or chooseLanguage == "nonsenseabbreviate" or chooseLanguage == "NONSENSEABBREVIATE":
-  print("\n", translateNonsenseAbbreviate())#utilizes nonsenseAbbreviate language if user pics nonsenseAbbreviate
+  print("\n", translateNonsenseAbbreviate())
 
 f.close()
