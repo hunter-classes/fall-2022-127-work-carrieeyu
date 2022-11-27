@@ -10,3 +10,14 @@ def translateStory():
 
 print(translateStory())
 """
+klistPirate = [x for x in pirate.keys()]
+#print(klist)#prints the words before pirate translation and converts to a list
+
+#vlistPirate = [x for x in pirate.values()]
+#print(vlist)#prints the values of the pirate and converts into a list
+
+klistBrooklyn = [x for x in brooklyn.keys()]
+#print(klist)#prints the words before pirate translation and converts to a list
+
+#vlistBrooklyn = [x for x in brooklyn.values()]
+#print(vlist)#prints the values of the pirate and converts into a list
