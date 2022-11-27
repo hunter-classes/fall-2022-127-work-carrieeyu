@@ -16,10 +16,6 @@ pirate = {'captain' : "cap'n",
 
 klistPirate = [x for x in pirate.keys()]#converts to a list of words before Pirate translation
 
-pirateWords = ['shiver me timbers!', 'blimey!', 'sink me!']
-brooklynWords = ['it is real sad!', 'got me dumbfounded!']
-nonsenseWords = ["n'more!", 'cryin!', 'weepin!']
-
 #creating the Brooklyn dictionary
 brooklyn = {'the' : "de",
             'you' : "yuh",
@@ -39,6 +35,10 @@ nonsenseAbbreviate = {'surrounded' : "surr'nded",
 klistNonsenseAbbreviate = [x for x in nonsenseAbbreviate.keys()]#converts to a list of words before nonsenseAbbreviate translation
 
 import random
+
+pirateWords = ['shiver me timbers!', 'blimey!', 'sink me!']
+brooklynWords = ['it is real sad!', 'got me dumbfounded!']
+nonsenseWords = ["n'more!", 'cryin!', 'weepin!']
 
 #function translates into Pirate language
 def translatePirate():
