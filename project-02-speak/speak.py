@@ -3,8 +3,6 @@
 #1) Have an option to translate different languages **DONE-->option to choose Pirate, Brooklyn, or nonsenseAbbreviate(made-up language)
 #2) Advanced translations **DONE
 
-import random
-
 f = open("input.txt", "r") #accessing the text file
 theStory = f.read() #reading from the text file
 wordsList = theStory.split() #splitting the story into a list structure; to use and access specific words by the index
@@ -18,9 +16,9 @@ pirate = {'captain' : "cap'n",
 
 klistPirate = [x for x in pirate.keys()]#converts to a list of words before Pirate translation
 
-pirateWords = ['shiver me timbers!', 'blimey', 'sink me!']
+pirateWords = ['shiver me timbers!', 'blimey!', 'sink me!']
 brooklynWords = ['it is real sad!', 'got me dumbfounded!']
-nonsenseWords = ["n'more!", 'cryin', 'weepin']
+nonsenseWords = ["n'more!", 'cryin!', 'weepin!']
 
 #creating the Brooklyn dictionary
 brooklyn = {'the' : "de",
@@ -39,6 +37,8 @@ nonsenseAbbreviate = {'surrounded' : "surr'nded",
                       'money' : "m'ney"}
 
 klistNonsenseAbbreviate = [x for x in nonsenseAbbreviate.keys()]#converts to a list of words before nonsenseAbbreviate translation
+
+import random
 
 #function translates into Pirate language
 def translatePirate():
