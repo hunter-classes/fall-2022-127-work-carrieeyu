@@ -1,0 +1,3 @@
+To run the program and print:
+1) g++ (filename).cpp -->locating the specific file and running through the code; remember to switch between files
+2)./a.out -->printing out the program
