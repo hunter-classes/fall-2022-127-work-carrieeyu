@@ -1,7 +1,12 @@
+
 s="""this is a string with a bunch of lower case letters. There's nothing too
 interesting about it other than the fact that there are a bunch
 of words over multiple lines and we're going to do some processing on them
 """
+
+translations = """a:b
+c:d
+oldword:neword"""
 
 def count_letters(s):
     """
@@ -27,4 +32,3 @@ def count_words(s):
 
 letter_counts = count_letters(s)
 word_counts = count_words(s)
-
