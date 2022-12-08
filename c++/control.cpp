@@ -4,6 +4,10 @@ int main()
 {
   int a;
   a = 5;
+
+  //bad form- you should almost always use {}
+  if (a==5)
+    a = a+1;  //a==5 which is a = a + 5 
   
   if (a < 20){
     std::cout << "a < 20\n";
