@@ -1,6 +1,6 @@
 import csv
 
-# flawed example using split
+# flawed example using split method
 # f = open("demo.csv")
 # for line in f.readlines():
 #     print(line)
