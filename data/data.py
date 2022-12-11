@@ -22,7 +22,7 @@ print("The average of all the astronauts' birth years is", round(sum/num_of_astr
 
 print("-------------------------------------------------------------------")
 
-#extra 1: comparing "U.S.S.R/Russia" and "U.S." to see which average number of females to males
+#extra 1: comparing "U.S.S.R/Russia" and "U.S." astronauts by gender
 reader2 = csv.DictReader(open("astronauts.csv"))
 data = [x for x in reader2]
 
