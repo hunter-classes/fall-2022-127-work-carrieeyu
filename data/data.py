@@ -1,9 +1,12 @@
 """
-https://corgis-edu.github.io/corgis/csv/astronauts/
+WORKING SOLO
 
 Extras:
-1) Use multiple aspects of a single data source in your analysis(DONE)
-2) Use more than one data source and have your analysis compare,contrast, or correlate them(DONE)
+1) Use multiple aspects of a single data source in your analysis (DONE)
+2) Use more than one data source and have your analysis compare,contrast, or correlate them (DONE)
+
+https://corgis-edu.github.io/corgis/csv/astronauts/
+https://corgis-edu.github.io/corgis/csv/billionaires/
 """
 
 import csv
