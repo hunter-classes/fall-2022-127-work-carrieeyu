@@ -1,3 +1,13 @@
 To run the program and print:
 1) g++ (filename).cpp -->locating the specific file and running through the code; remember to switch between files
 2)./a.out -->printing out the program
+
+
+//bad form to import an entire library such as "from random import *"
+//convenient method that advanced people and textbooks use but don't use it
+//don't use namespace standard
+
+//spend days working with emccs(e-macs?)
+//vim is not recommended for now
+//learn vscddo or vscodo
+//learn clion(Jetbrains????)
